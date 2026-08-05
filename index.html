@@ -6,6 +6,9 @@
 
   <title>Amir Yusoff | Developer</title>
 
+  <!-- Favicon Google (Huruf 'a' Warna Putih) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='bold' font-size='65'>a</text></svg>">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,18 +27,6 @@
       scroll-behavior:smooth;
     }
 
-    body{
-      font-family:'Space Grotesk',sans-serif;
-      background:#0a0a0a;
-      color:white;
-      overflow-x:hidden;
-    }
-
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
-
     :root{
       --bg:#0a0a0a;
       --card:#111111;
@@ -43,6 +34,36 @@
       --text:#ffffff;
       --muted:#9ca3af;
       --accent:#7c3aed;
+      --header-bg:rgba(10,10,10,0.7);
+      --code-bg:#050505;
+      --tech-bg:rgba(255,255,255,0.04);
+      --nav-link:#d1d5db;
+    }
+
+    [data-theme="light"] {
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --border:rgba(0,0,0,0.08);
+      --text:#0f172a;
+      --muted:#64748b;
+      --accent:#7c3aed;
+      --header-bg:rgba(248,250,252,0.8);
+      --code-bg:#0f172a;
+      --tech-bg:rgba(0,0,0,0.04);
+      --nav-link:#334155;
+    }
+
+    body{
+      font-family:'Space Grotesk',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      overflow-x:hidden;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
     }
 
     .container{
@@ -65,8 +86,9 @@
       width:100%;
       z-index:999;
       backdrop-filter:blur(12px);
-      background:rgba(10,10,10,0.7);
-      border-bottom:1px solid rgba(255,255,255,0.05);
+      background:var(--header-bg);
+      border-bottom:1px solid var(--border);
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     .navbar{
@@ -86,6 +108,12 @@
       color:var(--accent);
     }
 
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     .nav-links{
       display:flex;
       gap:30px;
@@ -93,13 +121,13 @@
     }
 
     .nav-links a{
-      color:#d1d5db;
+      color:var(--nav-link);
       transition:0.3s;
       font-size:0.95rem;
     }
 
     .nav-links a:hover{
-      color:white;
+      color:var(--text);
     }
 
     .btn{
@@ -116,7 +144,7 @@
 
     .btn-primary{
       background:var(--accent);
-      color:white;
+      color:#ffffff !important; /* Kekalkan tulisan putih untuk Hire Me & butang utama */
       box-shadow:0 10px 30px rgba(124,58,237,0.35);
     }
 
@@ -125,14 +153,49 @@
     }
 
     .btn-outline{
-      border:1px solid rgba(255,255,255,0.1);
+      border:1px solid var(--border);
       background:transparent;
-      color:white;
+      color:var(--text);
     }
 
     .btn-outline:hover{
-      background:rgba(255,255,255,0.05);
+      background:var(--tech-bg);
     }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      background: var(--tech-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+    }
+
+    .theme-toggle svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .sun-icon { display: none; }
+    .moon-icon { display: block; }
+
+    [data-theme="light"] .sun-icon { display: block; }
+    [data-theme="light"] .moon-icon { display: none; }
 
     .menu-toggle{
       display:none;
@@ -144,7 +207,7 @@
     .menu-toggle span{
       width:25px;
       height:3px;
-      background:white;
+      background:var(--text);
       border-radius:10px;
     }
 
@@ -182,9 +245,9 @@
       gap:10px;
       padding:10px 18px;
       border-radius:999px;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      color:#d1d5db;
+      background:var(--tech-bg);
+      border:1px solid var(--border);
+      color:var(--nav-link);
       margin-bottom:28px;
       font-size:0.9rem;
       font-family:'JetBrains Mono',monospace;
@@ -237,9 +300,9 @@
     .tech-item{
       padding:12px 18px;
       border-radius:14px;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      color:#d1d5db;
+      background:var(--tech-bg);
+      border:1px solid var(--border);
+      color:var(--nav-link);
       font-size:0.95rem;
       transition:0.3s;
     }
@@ -265,6 +328,7 @@
       border:1px solid var(--border);
       border-radius:28px;
       padding:40px;
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     .about-card h2{
@@ -279,13 +343,14 @@
     }
 
     .code-box{
-      background:#050505;
-      border:1px solid rgba(255,255,255,0.05);
+      background:var(--code-bg);
+      border:1px solid var(--border);
       border-radius:24px;
       padding:35px;
       font-family:'JetBrains Mono',monospace;
       color:#d1d5db;
       overflow:auto;
+      transition: background 0.3s ease;
     }
 
     .code-box span{
@@ -371,6 +436,7 @@
       border-radius:30px;
       padding:50px;
       text-align:center;
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     .contact-box h2{
@@ -390,9 +456,9 @@
 
     footer{
       padding:40px 0;
-      border-top:1px solid rgba(255,255,255,0.05);
+      border-top:1px solid var(--border);
       text-align:center;
-      color:#6b7280;
+      color:var(--muted);
     }
 
     /* =========================
@@ -430,7 +496,8 @@
         top:80px;
         right:0;
         width:100%;
-        background:#111;
+        background:var(--card);
+        border-bottom:1px solid var(--border);
         flex-direction:column;
         padding:30px;
         display:none;
@@ -482,22 +549,44 @@
         amir<span>.</span>
       </div>
 
-      <div class="nav-links" id="navLinks">
+      <div class="nav-right">
+        <div class="nav-links" id="navLinks">
 
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
 
-        <a href="#contact" class="btn btn-primary">
-          Hire Me
-        </a>
+          <a href="#contact" class="btn btn-primary">
+            Hire Me
+          </a>
 
-      </div>
+        </div>
 
-      <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
     </div>
@@ -638,7 +727,7 @@ const developer = {
         <div class="project-image" style="padding:0; overflow:hidden;">
 
           <img 
-            src="https://api.microlink.io/?url=https://dearycookies.vercel.app/&screenshot=true&meta=false&embed=screenshot.url"
+            src="https://api.microlink.io/?url=https://deary-cookies.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
             alt="Deary Cookies Preview"
             style="
               width:100%;
@@ -659,7 +748,7 @@ const developer = {
           </p>
 
           <a 
-            href="https://dearycookies.vercel.app/" 
+            href="https://deary-cookies.netlify.app/" 
             target="_blank"
             class="btn btn-outline"
           >
@@ -677,7 +766,7 @@ const developer = {
         <div class="project-image" style="padding:0; overflow:hidden;">
 
           <img 
-            src="https://api.microlink.io/?url=https://arkon-construction.vercel.app/&screenshot=true&meta=false&embed=screenshot.url"
+            src="https://api.microlink.io/?url=https://arkon-construction.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
             alt="Arkon Construction Preview"
             style="
               width:100%;
@@ -698,7 +787,7 @@ const developer = {
           </p>
 
           <a 
-            href="https://arkon-construction.vercel.app/" 
+            href="https://arkon-construction.netlify.app/" 
             target="_blank"
             class="btn btn-outline"
           >
@@ -755,7 +844,7 @@ const developer = {
         <div class="project-image" style="padding:0; overflow:hidden;">
 
           <img 
-            src="https://api.microlink.io/?url=https://hotzilla.vercel.app/&screenshot=true&meta=false&embed=screenshot.url"
+            src="https://api.microlink.io/?url=https://hotzilla.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
             alt="Hotzilla Preview"
             style="
               width:100%;
@@ -775,7 +864,7 @@ const developer = {
           </p>
 
           <a 
-            href="https://hotzilla.vercel.app/" 
+            href="https://hotzilla.netlify.app/" 
             target="_blank"
             class="btn btn-outline"
           >
@@ -793,7 +882,7 @@ const developer = {
         <div class="project-image" style="padding:0; overflow:hidden;">
 
           <img 
-            src="https://api.microlink.io/?url=https://sentral-dental.vercel.app//&screenshot=true&meta=false&embed=screenshot.url"
+            src="https://api.microlink.io/?url=https://sentraldental.netlify.app//&screenshot=true&meta=false&embed=screenshot.url"
             alt="Sentral Dental Preview"
             style="
               width:100%;
@@ -809,11 +898,50 @@ const developer = {
           <h3>Sentral Dental</h3>
 
           <p>
-          Bold and high-energy FnB landing page designed with mouth-watering, premium visuals, a fiery aesthetic, and conversion-focused sections for quick ordering.
+          Clean, high-trust clinic landing page designed with modern aesthetics, reassuring visuals, and frictionless sections for effortless appointment scheduling.
           </p>
 
           <a 
-            href="https://sentral-dental.vercel.app/" 
+            href="https://sentraldental.netlify.app/" 
+            target="_blank"
+            class="btn btn-outline"
+          >
+            View Project
+          </a>
+
+        </div>
+
+      </div>
+
+
+ <!-- PROJECT 6 -->
+
+      <div class="project-card fade-up">
+
+        <div class="project-image" style="padding:0; overflow:hidden;">
+
+          <img 
+            src="https://api.microlink.io/?url=https://karkita.netlify.app///&screenshot=true&meta=false&embed=screenshot.url"
+            alt="KarKita Preview"
+            style="
+              width:100%;
+              height:100%;
+              object-fit:cover;
+            "
+          />
+
+        </div>
+
+        <div class="project-content">
+
+          <h3>KarKita - Car Rental Service</h3>
+
+          <p>
+          High-impact, sleek car rental landing page featuring premium visuals, dynamic layouts, and a seamless flow built for lightning-fast bookings.
+          </p>
+
+          <a 
+            href="https://karkita.netlify.app/" 
             target="_blank"
             class="btn btn-outline"
           >
@@ -827,6 +955,7 @@ const developer = {
     </div>
 
   </div>
+
 
 </section>
   <!-- =========================
@@ -875,6 +1004,29 @@ const developer = {
   ========================== -->
 
   <script>
+
+    /* DARK / LIGHT MODE TOGGLE */
+
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      let newTheme = 'light';
+
+      if (currentTheme === 'light') {
+        newTheme = 'dark';
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+
+      localStorage.setItem('theme', newTheme);
+    });
 
     /* MOBILE MENU */
 
