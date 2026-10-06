@@ -3,578 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Amir Yusoff">
-  <meta name="keywords" content="Amir Yusoff, Fullstack Developer, Web Developer Malaysia, Systems Developer, UI UX, Next.js, Flutter, Freelance Developer">
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://amirsdev.com/">
 
-  <!-- Title & Description untuk Google Search -->
-  <title>Amir Yusoff — Full-Stack Engineer & Builder</title>
-  <meta name="description" content="Crafting modern web apps, robust systems, and digital solutions. Fullstack Developer based in Malaysia specializing in web development & UI/UX.">
+  <title>Amir Yusoff — High-Converting Business Websites & Web Systems</title>
 
-  <!-- Favicon / Logo Setup (SVG untuk Browser Tab + Fallback PNG untuk Google Search) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='bold' font-size='65'>a</text></svg>">
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <meta
+    name="description"
+    content="Amir Yusoff builds high-converting business websites, landing pages, e-commerce stores, and custom web systems in Malaysia."
+  >
 
-  <!-- Open Graph / Social Media Sharing (WhatsApp, Telegram, Facebook) -->
-  <meta property="og:site_name" content="Amir Yusoff Portfolio">
-  <meta property="og:title" content="Amir Yusoff — Full-Stack Engineer & Builder">
-  <meta property="og:description" content="Crafting modern web apps, robust systems, and digital solutions. Passionate about technology, startups, and community building.">
-  <meta property="og:url" content="https://amirsdev.com/">
+  <meta property="og:title" content="Amir Yusoff — Business Website Builder & Developer">
+  <meta
+    property="og:description"
+    content="Get a fast, modern, and high-converting website designed to grow your business."
+  >
+  <meta property="og:url" content="https://amirsdev.com">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
 
-  <!-- Twitter Card Meta -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Amir Yusoff — Full-Stack Engineer & Builder">
-  <meta name="twitter:description" content="Crafting modern web apps, robust systems, and digital solutions.">
-
-  <!-- JSON-LD Structured Data / Schema.org (Memberi info terus kepada Enjin Carian Google) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Amir Yusoff",
-    "url": "https://amirsdev.com",
-    "jobTitle": "Fullstack Developer",
-    "description": "Fullstack Software Developer specializing in web development, modern web applications, and digital solutions.",
-    "sameAs": [
-      "https://wa.me/601116674470"
-    ],
-    "knowsAbout": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Flutter",
-      "Next.js",
-      "Firebase",
-      "Web Development",
-      "UI/UX Design"
-    ]
-  }
-  </script>
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    :root{
-      --bg:#0a0a0a;
-      --card:#111111;
-      --border:rgba(255,255,255,0.08);
-      --text:#ffffff;
-      --muted:#9ca3af;
-      --accent:#7c3aed;
-      --header-bg:rgba(10,10,10,0.7);
-      --code-bg:#050505;
-      --tech-bg:rgba(255,255,255,0.04);
-      --nav-link:#d1d5db;
-    }
-
-    [data-theme="light"] {
-      --bg:#f8fafc;
-      --card:#ffffff;
-      --border:rgba(0,0,0,0.08);
-      --text:#0f172a;
-      --muted:#64748b;
-      --accent:#7c3aed;
-      --header-bg:rgba(248,250,252,0.8);
-      --code-bg:#0f172a;
-      --tech-bg:rgba(0,0,0,0.04);
-      --nav-link:#334155;
-    }
-
-    body{
-      font-family:'Space Grotesk',sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      overflow-x:hidden;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
-
-    .container{
-      width:90%;
-      max-width:1150px;
-      margin:auto;
-    }
-
-    section{
-      padding:100px 0;
-    }
-
-    /* =========================
-       NAVBAR
-    ========================== */
-
-    header{
-      position:fixed;
-      top:0;
-      width:100%;
-      z-index:999;
-      backdrop-filter:blur(12px);
-      background:var(--header-bg);
-      border-bottom:1px solid var(--border);
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-
-    .navbar{
-      height:80px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-    }
-
-    .logo{
-      font-size:1.2rem;
-      font-weight:700;
-      letter-spacing:1px;
-    }
-
-    .logo span{
-      color:var(--accent);
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .nav-links{
-      display:flex;
-      gap:30px;
-      align-items:center;
-    }
-
-    .nav-links a{
-      color:var(--nav-link);
-      transition:0.3s;
-      font-size:0.95rem;
-    }
-
-    .nav-links a:hover{
-      color:var(--text);
-    }
-
-    .btn{
-      padding:14px 24px;
-      border-radius:14px;
-      border:none;
-      cursor:pointer;
-      transition:0.3s;
-      font-weight:600;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .btn-primary{
-      background:var(--accent);
-      color:#ffffff !important; /* Kekalkan tulisan putih untuk Hire Me & butang utama */
-      box-shadow:0 10px 30px rgba(124,58,237,0.35);
-    }
-
-    .btn-primary:hover{
-      transform:translateY(-3px);
-    }
-
-    .btn-outline{
-      border:1px solid var(--border);
-      background:transparent;
-      color:var(--text);
-    }
-
-    .btn-outline:hover{
-      background:var(--tech-bg);
-    }
-
-    /* Theme Toggle Button */
-    .theme-toggle {
-      background: var(--tech-bg);
-      border: 1px solid var(--border);
-      color: var(--text);
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .theme-toggle:hover {
-      border-color: var(--accent);
-    }
-
-    .theme-toggle svg {
-      width: 20px;
-      height: 20px;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .sun-icon { display: none; }
-    .moon-icon { display: block; }
-
-    [data-theme="light"] .sun-icon { display: block; }
-    [data-theme="light"] .moon-icon { display: none; }
-
-    .menu-toggle{
-      display:none;
-      flex-direction:column;
-      gap:5px;
-      cursor:pointer;
-    }
-
-    .menu-toggle span{
-      width:25px;
-      height:3px;
-      background:var(--text);
-      border-radius:10px;
-    }
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .glow{
-      position:absolute;
-      width:500px;
-      height:500px;
-      background:rgba(124,58,237,0.18);
-      filter:blur(120px);
-      border-radius:50%;
-      top:-100px;
-      right:-100px;
-      z-index:-1;
-    }
-
-    .hero-content{
-      max-width:760px;
-    }
-
-    .hero-tag{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 18px;
-      border-radius:999px;
-      background:var(--tech-bg);
-      border:1px solid var(--border);
-      color:var(--nav-link);
-      margin-bottom:28px;
-      font-size:0.9rem;
-      font-family:'JetBrains Mono',monospace;
-    }
-
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:#22c55e;
-      box-shadow:0 0 10px #22c55e;
-    }
-
-    .hero h1{
-      font-size:5.5rem;
-      line-height:1;
-      margin-bottom:24px;
-      letter-spacing:-3px;
-    }
-
-    .hero h1 span{
-      color:var(--accent);
-    }
-
-    .hero p{
-      color:var(--muted);
-      font-size:1.1rem;
-      line-height:1.9;
-      max-width:650px;
-      margin-bottom:38px;
-    }
-
-    .hero-buttons{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-    }
-
-    /* =========================
-       TECH STACK
-    ========================== */
-
-    .tech-stack{
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      margin-top:40px;
-    }
-
-    .tech-item{
-      padding:12px 18px;
-      border-radius:14px;
-      background:var(--tech-bg);
-      border:1px solid var(--border);
-      color:var(--nav-link);
-      font-size:0.95rem;
-      transition:0.3s;
-    }
-
-    .tech-item:hover{
-      transform:translateY(-4px);
-      border-color:rgba(124,58,237,0.45);
-    }
-
-    /* =========================
-       ABOUT
-    ========================== */
-
-    .about-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:40px;
-      align-items:center;
-    }
-
-    .about-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:28px;
-      padding:40px;
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-
-    .about-card h2{
-      font-size:2.5rem;
-      margin-bottom:20px;
-    }
-
-    .about-card p{
-      color:var(--muted);
-      line-height:1.9;
-      margin-bottom:18px;
-    }
-
-    .code-box{
-      background:var(--code-bg);
-      border:1px solid var(--border);
-      border-radius:24px;
-      padding:35px;
-      font-family:'JetBrains Mono',monospace;
-      color:#d1d5db;
-      overflow:auto;
-      transition: background 0.3s ease;
-    }
-
-    .code-box span{
-      color:#7c3aed;
-    }
-
-    /* =========================
-       PROJECTS
-    ========================== */
-
-    .section-title{
-      text-align:center;
-      margin-bottom:60px;
-    }
-
-    .section-title h2{
-      font-size:3rem;
-      margin-bottom:14px;
-    }
-
-    .section-title p{
-      color:var(--muted);
-      max-width:650px;
-      margin:auto;
-    }
-
-    .project-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:24px;
-    }
-
-    .project-card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:24px;
-      overflow:hidden;
-      transition:0.35s;
-    }
-
-    .project-card:hover{
-      transform:translateY(-8px);
-      border-color:rgba(124,58,237,0.4);
-    }
-
-    .project-image{
-      height:220px;
-      background:linear-gradient(
-      135deg,
-      #7c3aed,
-      #4f46e5
-      );
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:3rem;
-    }
-
-    .project-content{
-      padding:30px;
-    }
-
-    .project-content h3{
-      margin-bottom:14px;
-      font-size:1.4rem;
-    }
-
-    .project-content p{
-      color:var(--muted);
-      line-height:1.8;
-      margin-bottom:24px;
-    }
-
-    /* =========================
-       CONTACT
-    ========================== */
-
-    .contact-box{
-      max-width:800px;
-      margin:auto;
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:30px;
-      padding:50px;
-      text-align:center;
-      transition: background 0.3s ease, border-color 0.3s ease;
-    }
-
-    .contact-box h2{
-      font-size:3rem;
-      margin-bottom:20px;
-    }
-
-    .contact-box p{
-      color:var(--muted);
-      line-height:1.8;
-      margin-bottom:35px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer{
-      padding:40px 0;
-      border-top:1px solid var(--border);
-      text-align:center;
-      color:var(--muted);
-    }
-
-    /* =========================
-       ANIMATION
-    ========================== */
-
-    .fade-up{
-      opacity:0;
-      transform:translateY(40px);
-      transition:all 0.8s ease;
-    }
-
-    .fade-up.show{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    /* =========================
-       RESPONSIVE
-    ========================== */
-
-    @media(max-width:992px){
-
-      .project-grid,
-      .about-grid{
-        grid-template-columns:1fr;
-      }
-
-      .hero h1{
-        font-size:4rem;
-      }
-
-      .nav-links{
-        position:absolute;
-        top:80px;
-        right:0;
-        width:100%;
-        background:var(--card);
-        border-bottom:1px solid var(--border);
-        flex-direction:column;
-        padding:30px;
-        display:none;
-      }
-
-      .nav-links.active{
-        display:flex;
-      }
-
-      .menu-toggle{
-        display:flex;
-      }
-    }
-
-    @media(max-width:600px){
-
-      section{
-        padding:80px 0;
-      }
-
-      .hero h1{
-        font-size:3rem;
-      }
-
-      .section-title h2,
-      .contact-box h2{
-        font-size:2.2rem;
-      }
-
-      .contact-box{
-        padding:35px;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -584,33 +29,37 @@
   ========================== -->
 
   <header>
-
     <div class="container navbar">
 
-      <div class="logo">
+      <a href="#" class="logo">
         amir<span>.</span>
-      </div>
+      </a>
 
       <div class="nav-right">
-        <div class="nav-links" id="navLinks">
 
+        <nav class="nav-links" id="navLinks">
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#projects">Work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#process">Process</a>
           <a href="#contact">Contact</a>
 
-          <a href="#contact" class="btn btn-primary">
-            Hire Me
+          <a href="#contact" class="btn btn-primary nav-cta">
+            Get Started
           </a>
+        </nav>
 
-        </div>
-
-        <!-- Theme Toggle Button -->
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <!-- Moon Icon (Dark Mode) -->
+        <!-- Theme Toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle theme"
+        >
           <svg class="moon-icon" viewBox="0 0 24 24">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"></path>
           </svg>
-          <!-- Sun Icon (Light Mode) -->
+
           <svg class="sun-icon" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -624,117 +73,124 @@
           </svg>
         </button>
 
-        <div class="menu-toggle" id="menuToggle">
+        <!-- Mobile Menu -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
+
       </div>
-
     </div>
-
   </header>
 
+
   <!-- =========================
-       MAIN CONTENT (SEMANTIC TAG FOR SEO)
+       HERO
   ========================== -->
 
   <main>
 
-    <!-- HERO SECTION -->
     <section class="hero">
 
-      <div class="glow"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
 
       <div class="container">
 
         <div class="hero-content fade-up">
 
           <div class="hero-tag">
-            <div class="dot"></div>
-            Available for freelance
+            <span class="dot"></span>
+            Accepting New Business Projects
           </div>
 
           <h1>
-            Fullstack Developer<br>
-            & <span>Creative Builder.</span>
+            High-Converting Websites
+            <br>
+            <span>For Growing Businesses.</span>
           </h1>
 
           <p>
-            I build modern websites, systems and digital experiences.
-            Passionate about technology, startups, community building
-            and creating impactful products.
+            I build fast, modern, and conversion-focused websites, e-commerce stores, and web systems that help businesses gain credibility and generate more sales 24/7.
           </p>
 
           <div class="hero-buttons">
 
-            <a href="#projects" class="btn btn-primary">
-              View Projects
+            <a href="#pricing" class="btn btn-primary">
+              View Packages & Pricing
             </a>
 
-            <a href="#contact" class="btn btn-outline">
-              Contact Me
+            <a href="#projects" class="btn btn-outline">
+              See Recent Work
             </a>
 
           </div>
 
           <div class="tech-stack">
-
-            <div class="tech-item">HTML</div>
-            <div class="tech-item">CSS</div>
-            <div class="tech-item">JavaScript</div>
-            <div class="tech-item">Flutter</div>
-            <div class="tech-item">Next.js</div>
-            <div class="tech-item">Firebase</div>
-
+            <span>Payment Gateways</span>
+            <span>SEO Optimised</span>
+            <span>WhatsApp Ordering</span>
+            <span>Fast Loading</span>
+            <span>Next.js</span>
+            <span>E-Commerce</span>
           </div>
 
         </div>
 
       </div>
-
     </section>
 
-    <!-- ABOUT SECTION -->
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
     <section id="about">
 
       <div class="container about-grid">
 
         <div class="about-card fade-up">
 
-          <h2>About Me</h2>
+          <span class="eyebrow">ABOUT ME</span>
+
+          <h2>
+            Turning business goals into
+            <span>digital experiences.</span>
+          </h2>
 
           <p>
-            Salam, I'm Amir — a developer from Malaysia who enjoys
-            building clean UI, modern web systems and impactful digital products.
+            Salam, I'm Amir — a full-stack developer based in Malaysia. I specialise in building high-performance websites, custom landing pages, and web applications for businesses, PKS, and startups.
           </p>
 
           <p>
-            Besides coding, I’m also passionate about community,
-            content creation and helping students grow through technology.
+            My goal isn't just to write code, but to build digital solutions that elevate your brand image and convert visitors into paying clients.
           </p>
 
           <a href="#contact" class="btn btn-primary">
-            Let's Connect
+            Start a Project
           </a>
 
         </div>
 
+
         <div class="code-box fade-up">
 
-<pre>
-const developer = {
-  name: "Amir Yusoff",
-  role: "Fullstack Developer",
-  passion: [
-    "Web Development",
-    "Startups",
-    "UI/UX",
-    "Community"
+<pre><span class="code-keyword">const</span> service = {
+  developer: <span class="code-string">"Amir Yusoff"</span>,
+  focus: <span class="code-string">"High-Converting Websites"</span>,
+  deliverables: [
+    <span class="code-string">"Fast Page Loads"</span>,
+    <span class="code-string">"Mobile Responsive"</span>,
+    <span class="code-string">"Payment & WhatsApp Integration"</span>,
+    <span class="code-string">"100% Peace of Mind"</span>
   ],
-  currentlyBuilding: "Cool Things"
-}
-</pre>
+  status: <span class="code-string">"Ready to Build"</span>
+}</pre>
 
         </div>
 
@@ -742,252 +198,739 @@ const developer = {
 
     </section>
 
-    <!-- PROJECTS SECTION -->
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+
+    <section id="why-us">
+
+      <div class="container">
+
+        <div class="section-title fade-up">
+
+          <span class="eyebrow">WHY CHOOSE US</span>
+
+          <h2>More than just code.<br><span>Built for business growth.</span></h2>
+
+          <p>
+            Anyone can create a basic template, but we focus on delivering real value, technical reliability, and measurable business outcomes.
+          </p>
+
+        </div>
+
+<div class="features-grid">
+
+          <div class="feature-card fade-up">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Conversion Focused</h3>
+            <p>Designed with user psychology in mind to guide your visitors towards WhatsApp inquiries, bookings, or direct checkouts.</p>
+          </div>
+
+          <div class="feature-card fade-up">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3>Local Integrations</h3>
+            <p>Seamless connection with Malaysian payment gateways (ToyyibPay/Billplz/FPX), WhatsApp order routing, and Google Maps.</p>
+          </div>
+
+          <div class="feature-card fade-up">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Zero Tech Headaches</h3>
+            <p>We handle hosting, domains, SSL security, and maintenance so you can focus entirely on running your operations.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
     <section id="projects">
 
       <div class="container">
 
         <div class="section-title fade-up">
 
+          <span class="eyebrow">SELECTED WORK</span>
+
           <h2>Featured Projects</h2>
 
           <p>
-            Real websites & landing pages I’ve built recently.
+            Real websites and digital experiences built for client brands.
           </p>
 
         </div>
 
+
         <div class="project-grid">
 
           <!-- PROJECT 1 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
+            <div class="project-image">
+              <img
                 src="https://api.microlink.io/?url=https://deary-cookies.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Deary Cookies Landing Page Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+                alt="Deary Cookies Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
+
+              <span class="project-number">01</span>
 
               <h3>Deary Cookies</h3>
 
               <p>
                 Premium cookies brand landing page with aesthetic UI,
-                smooth product showcase and WhatsApp order experience.
+                smooth product showcase and WhatsApp ordering experience.
               </p>
 
-              <a 
-                href="https://deary-cookies.netlify.app/" 
+              <a
+                href="https://deary-cookies.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
-          </div>
 
           <!-- PROJECT 2 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
+            <div class="project-image">
+              <img
                 src="https://api.microlink.io/?url=https://arkon-construction.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Arkon Construction Website Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+                alt="Arkon Construction Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
+
+              <span class="project-number">02</span>
 
               <h3>Arkon Construction</h3>
 
               <p>
-                Corporate construction company website with modern branding,
-                service sections and strong professional presentation.
+                Corporate construction company website with modern
+                branding, service sections and professional presentation.
               </p>
 
-              <a 
-                href="https://arkon-construction.netlify.app/" 
+              <a
+                href="https://arkon-construction.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
-          </div>
 
           <!-- PROJECT 3 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
+            <div class="project-image">
+              <img
                 src="https://api.microlink.io/?url=https://spa-n-go.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Spa N Go Wellness Landing Page Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+                alt="Spa N Go Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
+
+              <span class="project-number">03</span>
 
               <h3>Spa N Go</h3>
 
               <p>
-                Luxury spa and wellness landing page designed with elegant visuals,
-                calming aesthetics and booking-focused sections.
+                Luxury spa and wellness landing page designed with
+                elegant visuals, calming aesthetics and booking-focused sections.
               </p>
 
-              <a 
-                href="https://spa-n-go.netlify.app/" 
+              <a
+                href="https://spa-n-go.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
-          </div>
 
           <!-- PROJECT 4 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
+            <div class="project-image">
+              <img
                 src="https://api.microlink.io/?url=https://hotzilla.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Hotzilla FnB Landing Page Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+                alt="Hotzilla Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
+
+              <span class="project-number">04</span>
 
               <h3>Hotzilla</h3>
 
               <p>
-              Bold and high-energy FnB landing page designed with mouth-watering, premium visuals, a fiery aesthetic, and conversion-focused sections for quick ordering.
+                High-energy F&B landing page with bold visuals,
+                fiery aesthetics and conversion-focused ordering sections.
               </p>
 
-              <a 
-                href="https://hotzilla.netlify.app/" 
+              <a
+                href="https://hotzilla.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
-          </div>
 
           <!-- PROJECT 5 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
-                src="https://api.microlink.io/?url=https://sentraldental.netlify.app//&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Sentral Dental Clinic Landing Page Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+            <div class="project-image">
+              <img
+                src="https://api.microlink.io/?url=https://sentraldental.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Sentral Dental Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
+
+              <span class="project-number">05</span>
 
               <h3>Sentral Dental</h3>
 
               <p>
-              Clean, high-trust clinic landing page designed with modern aesthetics, reassuring visuals, and frictionless sections for effortless appointment scheduling.
+                Clean, high-trust clinic landing page designed with
+                modern aesthetics and frictionless appointment sections.
               </p>
 
-              <a 
-                href="https://sentraldental.netlify.app/" 
+              <a
+                href="https://sentraldental.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
-          </div>
 
           <!-- PROJECT 6 -->
-          <div class="project-card fade-up">
 
-            <div class="project-image" style="padding:0; overflow:hidden;">
+          <article class="project-card fade-up">
 
-              <img 
-                src="https://api.microlink.io/?url=https://karkita.netlify.app///&screenshot=true&meta=false&embed=screenshot.url"
-                alt="KarKita Car Rental Service Landing Page Preview"
-                style="
-                  width:100%;
-                  height:100%;
-                  object-fit:cover;
-                "
-              />
-
+            <div class="project-image">
+              <img
+                src="https://api.microlink.io/?url=https://karkita.netlify.app/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="KarKita Preview"
+                loading="lazy"
+              >
             </div>
 
             <div class="project-content">
 
-              <h3>KarKita - Car Rental Service</h3>
+              <span class="project-number">06</span>
+
+              <h3>KarKita — Car Rental</h3>
 
               <p>
-              High-impact, sleek car rental landing page featuring premium visuals, dynamic layouts, and a seamless flow built for lightning-fast bookings.
+                Sleek car rental landing page featuring premium visuals,
+                dynamic layouts and a seamless booking-focused flow.
               </p>
 
-              <a 
-                href="https://karkita.netlify.app/" 
+              <a
+                href="https://karkita.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn btn-outline"
+                class="project-link"
               >
-                View Project
+                View Live Site →
               </a>
 
             </div>
+          </article>
 
+          <!-- PROJECT 7 -->
+            <article class="project-card fade-up">
+
+            <div class="project-image">
+              <img
+                src="https://api.microlink.io/?url=https://penangcarental.com/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Penang Carental Preview"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="project-content">
+
+              <span class="project-number">07</span>
+
+              <h3>Penang Car Rental</h3>
+
+              <p>
+                Premium car rental website focused on showcasing vehicles and simplifying bookings.
+              </p>
+
+              <a
+                href="https://penangcarental.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Live Site →
+              </a>
+
+            </div>
+          </article>
+
+            <!-- PROJECT 8 -->
+            <article class="project-card fade-up">
+
+            <div class="project-image">
+              <img
+                src="https://api.microlink.io/?url=https://thekomunal.com/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Penang Carental Preview"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="project-content">
+
+              <span class="project-number">08</span>
+
+              <h3>The Komunal</h3>
+
+              <p>
+                Modern F&B platform connecting customers with local dining experiences and offerings.
+              </p>
+
+              <a
+                href="https://thekomunal.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Live Site →
+              </a>
+
+            </div>
+          </article>
+
+                    <!-- PROJECT 9 -->
+            <article class="project-card fade-up">
+
+            <div class="project-image">
+              <img
+                src="https://api.microlink.io/?url=https://nzmalaya.com/&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Nz Malaya Preview"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="project-content">
+
+              <span class="project-number">09</span>
+
+              <h3>NZ Malaya</h3>
+
+              <p>
+                Modern travel website crafted to showcase destinations, packages and unforgettable experiences.
+              </p>
+
+              <a
+                href="https://nzmalaya.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Live Site →
+              </a>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRICING
+    ========================== -->
+
+    <section id="pricing">
+
+      <div class="container">
+
+        <div class="section-title fade-up">
+
+          <span class="eyebrow">SERVICES & PRICING</span>
+
+          <h2>Transparent packages.<br><span>Designed for your stage.</span></h2>
+
+          <p>
+            Choose the right solution for your business, from single-page landers to full e-commerce platforms.
+          </p>
+
+        </div>
+
+
+        <div class="pricing-grid">
+
+
+          <!-- STARTER -->
+
+          <article class="pricing-card fade-up">
+
+            <div class="pricing-top">
+
+              <span class="pricing-label">
+                STARTER
+              </span>
+
+              <h3>Landing Page</h3>
+
+              <p class="pricing-description">
+                Ideal for ad campaigns, single products, or quick setups.
+              </p>
+
+              <div class="price">
+                <small>RM</small>800
+              </div>
+
+              <span class="price-note">
+                one-time payment
+              </span>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="features">
+
+              <li>
+                <span>✓</span>
+                1-Page Conversion Layout
+              </li>
+
+              <li>
+                <span>✓</span>
+                Mobile Responsive
+              </li>
+
+              <li>
+                <span>✓</span>
+                WhatsApp Direct Order
+              </li>
+
+              <li>
+                <span>✓</span>
+                Basic SEO Setup
+              </li>
+
+              <li>
+                <span>✓</span>
+                Fast Loading Speed
+              </li>
+
+              <li>
+                <span>✓</span>
+                Deployment Setup
+              </li>
+
+            </ul>
+
+
+            <a href="#contact" class="pricing-button">
+              Get Started →
+            </a>
+
+          </article>
+
+
+          <!-- BUSINESS -->
+
+          <article class="pricing-card featured fade-up">
+
+            <div class="popular-badge">
+              MOST POPULAR
+            </div>
+
+            <div class="pricing-top">
+
+              <span class="pricing-label">
+                BUSINESS
+              </span>
+
+              <h3>Corporate Site</h3>
+
+              <p class="pricing-description">
+                Comprehensive website for PKS, agencies & professionals.
+              </p>
+
+              <div class="price">
+                <small>RM</small>1,500
+              </div>
+
+              <span class="price-note">
+                one-time payment
+              </span>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="features">
+
+              <li>
+                <span>✓</span>
+                Multi-Section Design (Up to 5 Pages)
+              </li>
+
+              <li>
+                <span>✓</span>
+                Custom Branding UI/UX
+              </li>
+
+              <li>
+                <span>✓</span>
+                WhatsApp / Enquiry Forms
+              </li>
+
+              <li>
+                <span>✓</span>
+                Google Maps & SEO Optimisation
+              </li>
+
+              <li>
+                <span>✓</span>
+                Domain & Hosting Setup
+              </li>
+
+              <li>
+                <span>✓</span>
+                30-Days Free Support
+              </li>
+
+            </ul>
+
+
+            <a href="#contact" class="pricing-button">
+              Build Business Site →
+            </a>
+
+          </article>
+
+
+          <!-- E-COMMERCE -->
+
+          <article class="pricing-card fade-up">
+
+            <div class="pricing-top">
+
+              <span class="pricing-label">
+                E-COMMERCE
+              </span>
+
+              <h3>Online Store</h3>
+
+              <p class="pricing-description">
+                Full online store setup to sell products automatically.
+              </p>
+
+              <div class="price">
+                <small>RM</small>2,200
+              </div>
+
+              <span class="price-note">
+                RM 2,200 – RM 2,800
+              </span>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="features">
+
+              <li>
+                <span>✓</span>
+                Full Online Store Setup
+              </li>
+
+              <li>
+                <span>✓</span>
+                Payment Gateway (FPX / Cards)
+              </li>
+
+              <li>
+                <span>✓</span>
+                Inventory & Stock Management
+              </li>
+
+              <li>
+                <span>✓</span>
+                Shipping / Courier Calculation
+              </li>
+
+              <li>
+                <span>✓</span>
+                Customer Account Dashboard
+              </li>
+
+              <li>
+                <span>✓</span>
+                Order Notification Setup
+              </li>
+
+            </ul>
+
+
+            <a href="#contact" class="pricing-button">
+              Launch Store →
+            </a>
+
+          </article>
+
+
+          <!-- PRO / CUSTOM -->
+
+          <article class="pricing-card fade-up">
+
+            <div class="pricing-top">
+
+              <span class="pricing-label">
+                CUSTOM
+              </span>
+
+              <h3>Web System</h3>
+
+              <p class="pricing-description">
+                Tailored web apps, booking engines & custom platforms.
+              </p>
+
+              <div class="price">
+                <small>RM</small>3,500
+              </div>
+
+              <span class="price-note">
+                starting price
+              </span>
+
+            </div>
+
+
+            <div class="pricing-divider"></div>
+
+
+            <ul class="features">
+
+              <li>
+                <span>✓</span>
+                Custom Web Application
+              </li>
+
+              <li>
+                <span>✓</span>
+                Booking & Reservation Engine
+              </li>
+
+              <li>
+                <span>✓</span>
+                User Authentication & Portal
+              </li>
+
+              <li>
+                <span>✓</span>
+                Database Architecture
+              </li>
+
+              <li>
+                <span>✓</span>
+                Admin Management Dashboard
+              </li>
+
+              <li>
+                <span>✓</span>
+                Ongoing Technical Maintenance
+              </li>
+
+            </ul>
+
+
+            <a href="#contact" class="pricing-button">
+              Discuss Project →
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div class="pricing-note-box fade-up">
+
+          <div class="note-icon">+</div>
+
+          <div>
+            <strong>Need something tailored specifically for your workflow?</strong>
+
+            <p>
+              Contact me directly for a custom consultation and quotation based on your exact requirements.
+            </p>
           </div>
 
         </div>
@@ -996,23 +939,129 @@ const developer = {
 
     </section>
 
-    <!-- CONTACT SECTION -->
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
+
+    <section id="process">
+
+      <div class="container">
+
+        <div class="section-title fade-up">
+
+          <span class="eyebrow">HOW IT WORKS</span>
+
+          <h2>Simple 3-step process.<br><span>No technical stress.</span></h2>
+
+          <p>
+            We keep the process seamless so you can focus on your business while we handle the technical build.
+          </p>
+
+        </div>
+
+        <div class="process-grid">
+
+          <div class="process-step fade-up">
+            <span class="step-number">STEP 01</span>
+            <h3>1. Discovery & Strategy</h3>
+            <p>We discuss your business goals, target audience, preferred design style, and core features needed.</p>
+          </div>
+
+          <div class="process-step fade-up">
+            <span class="step-number">STEP 02</span>
+            <h3>2. Design & Build</h3>
+            <p>I develop your website with clean code, responsive layouts, fast load speeds, and functional integrations.</p>
+          </div>
+
+          <div class="process-step fade-up">
+            <span class="step-number">STEP 03</span>
+            <h3>3. Review & Launch</h3>
+            <p>We test the site together, configure your domain and SSL security, and launch your site live to the world.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section id="contact">
 
       <div class="container">
 
         <div class="contact-box fade-up">
 
-          <h2>Let's Build Something.</h2>
+          <span class="eyebrow">LET'S WORK TOGETHER</span>
+
+          <h2>
+            Ready to grow your business?
+            <span>Let's talk today.</span>
+          </h2>
 
           <p>
-            Open for freelance, collaborations and startup projects.
-            Feel free to reach out anytime.
+            Fill in the quick details below or reach out directly via WhatsApp for a fast response.
           </p>
 
-          <a href="https://wa.me/601116674470" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Contact On WhatsApp
-          </a>
+          <!-- BORANG TEMPAHAN SIMPEL -->
+          <form 
+            class="contact-form" 
+            action="https://wa.me/601116674470" 
+            method="GET" 
+            target="_blank"
+            onsubmit="handleFormSubmit(event)"
+          >
+
+            <div class="form-group">
+              <label for="name">Your Name / Business Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Amir / Deary Cookies" required>
+            </div>
+
+            <div class="form-group">
+              <label for="package">Interested Package</label>
+              <select id="package" class="form-select">
+                <option value="Starter Landing Page (RM800)">Starter Landing Page (RM 800)</option>
+                <option value="Business Website (RM1,500)" selected>Business Website (RM 1,500)</option>
+                <option value="E-Commerce Store (RM2,200 - RM2,800)">E-Commerce Store (RM 2,200 - RM 2,800)</option>
+                <option value="Custom Web System (RM3,500+)">Custom Web System (RM 3,500+)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details / Message (Optional)</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me briefly about your business or required features..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%;">
+              Send Inquiry via WhatsApp →
+            </button>
+
+          </form>
+
+          <div class="contact-buttons" style="margin-top: 24px;">
+
+            <a
+              href="https://wa.me/601116674470"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+            >
+              Direct WhatsApp
+            </a>
+
+            <a
+              href="mailto:hello@amirsdev.com"
+              class="btn btn-outline"
+            >
+              Send an Email
+            </a>
+
+          </div>
 
         </div>
 
@@ -1022,80 +1071,42 @@ const developer = {
 
   </main>
 
+
   <!-- =========================
        FOOTER
   ========================== -->
 
   <footer>
 
-    <div class="container">
+    <div class="container footer-inner">
 
-      © 2026 Amir Yusoff — Built with HTML & CSS.
+      <div>
+        © 2026 Amir Yusoff — Web Developer & Builder
+      </div>
+
+      <div>
+        Built with HTML, CSS & JavaScript.
+      </div>
 
     </div>
 
   </footer>
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
+  <script src="script.js"></script>
 
+  <!-- Script untuk hantar mesej borang terus ke WhatsApp -->
   <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const pkg = document.getElementById('package').value;
+      const msg = document.getElementById('message').value;
 
-    /* DARK / LIGHT MODE TOGGLE */
-
-    const themeToggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
+      const text = `Salam Amir, saya ${name}.\nSaya berminat dengan pakej *${pkg}*.\n\nCatatan: ${msg || 'Tiada'}`;
+      const encodedText = encodeURIComponent(text);
+      
+      window.open(`https://wa.me/601116674470?text=${encodedText}`, '_blank');
     }
-
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      let newTheme = 'light';
-
-      if (currentTheme === 'light') {
-        newTheme = 'dark';
-        document.documentElement.removeAttribute('data-theme');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-
-      localStorage.setItem('theme', newTheme);
-    });
-
-    /* MOBILE MENU */
-
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    /* FADE ANIMATION */
-
-    const fadeElements = document.querySelectorAll('.fade-up');
-
-    const observer = new IntersectionObserver((entries) => {
-
-      entries.forEach(entry => {
-
-        if(entry.isIntersecting){
-          entry.target.classList.add('show');
-        }
-
-      });
-
-    }, {
-      threshold:0.1
-    });
-
-    fadeElements.forEach(el => {
-      observer.observe(el);
-    });
-
   </script>
 
 </body>
